@@ -1,0 +1,120 @@
+/* Base styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background: linear-gradient(to right, #f7f7f7, #f4b363); /* Light gray gradient */
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: #171711;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #171711;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8; /* Adjust opacity as needed */
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.nav-menu li:hover {
+    color: #ff4141; /* Add hover effect with a vibrant red color */
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    background-color: red;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login button {
+    width: 157px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 74px;
+    color: #515151;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.login button:hover {
+    background-color: #ed8200; /* Add subtle hover effect on the button */
+}
+
+.login button:active {
+    background-color: rgb(104, 96, 96);
+}
+
+.nav:hover {
+    color: red; /* Consider using a more subtle hover effect */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-logo,
+    .nav-menu,
+    .login {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .login button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo p {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .nav-menu li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

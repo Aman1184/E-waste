@@ -1,0 +1,28 @@
+.call-strip {
+    background-color: #333333; /* Light gray background */
+    padding: 70px;
+    text-align: center;
+    
+  }
+  
+  .call-strip h1 {
+    margin-bottom: 10px;
+    font-size: 6rem; /* Adjust font size as needed */
+    font-weight: bold;
+  }
+  
+  .call-strip p {
+    font-size: 0.9rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Improve readability */
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
+@media only screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    .call-strip h1 {
+      font-size: 1.2rem; /* Adjust for smaller screens */
+    }
+    .call-strip p {
+      font-size: 0.8rem; /* Adjust for smaller screens */
+    }
+}
